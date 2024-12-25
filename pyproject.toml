@@ -1,0 +1,20 @@
+[project]
+name = "imageclassify"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Atr1ck", email = "3126670240@qq.com"},
+]
+dependencies = ["ultralytics>=8.3.53"]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[[tool.pdm.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124"
+include_packages = ["torch", "torchvision", "torchaudio"]
